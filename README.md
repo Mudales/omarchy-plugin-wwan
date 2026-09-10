@@ -6,7 +6,7 @@ The widget hides when the machine has no modem. Wi-Fi and Ethernet stay in the s
 
 ![WWAN panel open from the bar, connected to Telekom.de on LTE](preview.png)
 
-Plugin id: `io.github.serg3k.omarchy-plugin-wwan`. Listed on [Omarchy Plugins](https://omarchyplugins.com/plugin.html?id=io.github.serg3k.omarchy-plugin-wwan).
+Plugin id: `io.github.mudales.wwan`. This is a fork of [serg3k/omarchy-plugin-wwan](https://github.com/serg3k/omarchy-plugin-wwan) (original, and its [Omarchy Plugins listing](https://omarchyplugins.com/plugin.html?id=io.github.serg3k.omarchy-plugin-wwan)), re-namespaced and pinned for local use. Code by Serge, MIT.
 
 ## Features
 
@@ -48,24 +48,24 @@ See [Arch Wiki: FCC locking](https://wiki.archlinux.org/title/Mobile_broadband_m
 This repo is a plugin: `manifest.json` at the root.
 
 ```bash
-omarchy plugin add https://github.com/serg3k/omarchy-plugin-wwan.git --enable
+omarchy plugin add https://github.com/Mudales/omarchy-plugin-wwan.git --enable
 ```
 
 From a local checkout:
 
 ```bash
 mkdir -p ~/.config/omarchy/plugins
-ln -sfn "$(pwd)" ~/.config/omarchy/plugins/io.github.serg3k.omarchy-plugin-wwan
-omarchy plugin validate ~/.config/omarchy/plugins/io.github.serg3k.omarchy-plugin-wwan
-omarchy plugin enable io.github.serg3k.omarchy-plugin-wwan
+ln -sfn "$(pwd)" ~/.config/omarchy/plugins/io.github.mudales.wwan
+omarchy plugin validate ~/.config/omarchy/plugins/io.github.mudales.wwan
+omarchy plugin enable io.github.mudales.wwan
 ```
 
-If the icon does not appear, run `omarchy-shell shell rescanPlugins` or `omarchy restart shell`. Move it with `omarchy bar move io.github.serg3k.omarchy-plugin-wwan --section right` if you want a different slot.
+If the icon does not appear, run `omarchy-shell shell rescanPlugins` or `omarchy restart shell`. Move it with `omarchy bar move io.github.mudales.wwan --section right` if you want a different slot.
 
 ## Removal
 
 ```bash
-omarchy plugin remove io.github.serg3k.omarchy-plugin-wwan
+omarchy plugin remove io.github.mudales.wwan
 ```
 
 That disables the widget and removes the checkout or symlink under `~/.config/omarchy/plugins/`. A hand-made folder with no git remote is moved to a timestamped backup instead of being deleted.

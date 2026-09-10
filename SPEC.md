@@ -4,7 +4,7 @@ User-facing install and usage: [README.md](README.md).
 
 User-space Omarchy shell plugin: WWAN / cellular modem in the Quattro bar.
 
-The git repo and this folder stay **`omarchy-plugin-wwan`**. The live manifest id is **`io.github.serg3k.omarchy-plugin-wwan`**. That is not the reserved `omarchy.*` namespace (`omarchy.wwan` would be rejected). A later first-party copy would live at `shell/plugins/panels/wwan/` with id `omarchy.wwan`.
+The git repo and this folder stay **`omarchy-plugin-wwan`**. The live manifest id is **`io.github.mudales.wwan`**. That is not the reserved `omarchy.*` namespace (`omarchy.wwan` would be rejected). A later first-party copy would live at `shell/plugins/panels/wwan/` with id `omarchy.wwan`.
 
 | File | What |
 |---|---|
@@ -19,12 +19,12 @@ The git repo and this folder stay **`omarchy-plugin-wwan`**. The live manifest i
 
 ```bash
 mkdir -p ~/.config/omarchy/plugins
-ln -sfn /home/nm/dev/omarchy/plugins/omarchy-plugin-wwan ~/.config/omarchy/plugins/io.github.serg3k.omarchy-plugin-wwan
+ln -sfn /home/nm/dev/omarchy/plugins/omarchy-plugin-wwan ~/.config/omarchy/plugins/io.github.mudales.wwan
 omarchy-shell shell rescanPlugins
-omarchy plugin enable io.github.serg3k.omarchy-plugin-wwan
+omarchy plugin enable io.github.mudales.wwan
 ```
 
-Or add `{ "id": "io.github.serg3k.omarchy-plugin-wwan" }` to `bar.layout.right` in `~/.config/omarchy/shell.json`.
+Or add `{ "id": "io.github.mudales.wwan" }` to `bar.layout.right` in `~/.config/omarchy/shell.json`.
 
 Saves under `~/.config/omarchy/plugins/` hot-reload. Force: `omarchy-shell shell rescanPlugins`.
 
