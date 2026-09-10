@@ -103,6 +103,7 @@ Inside the panel:
 | Date | Machine | Modem | Notes |
 |---|---|---|---|
 | 2026-08-18 | Lenovo ThinkPad T14 Gen 6 (`21QJ00DTGE`), Omarchy 4.0.0, kernel `6.18.2-arch2-1` | Quectel **EM061K-GL** (LTE) | NM profile `v6-telekom`, operator Telekom.de, FCC unlock `2c7c:6008` already on the host |
+| 2026-09-10 | HP EliteBook 645 14 inch G10 (`8D573ES#ABT`), Omarchy 4.0.0.alpha, kernel `7.2.3-arch1-3` | Intel **XMM7560** (`iosm`, MBIM) | NM profile `Pelephone`, operator IL Pelephone; no FCC unlock needed; PCI `8086:7560` |
 
 Other laptops with a ModemManager gsm device should work the same. They are not tested in this tree.
 
